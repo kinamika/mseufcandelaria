@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Envergan News Bearer</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<style>
+
+
+</style>
+<body>
+   
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/images/seal_logo.png" alt="logo">
+                
+            </a>
+            <div class="logoname">MSEUFCandelaria</div>
+        </div>
+        <div class="header-right">
+            <a href="#programs" class="active">Programs</a>
+            <a href="#news">News</a>
+            <a href="#announcements">Announcements</a>
+            <a href="#calendar">Calendar</a>
+            <a href="#sites">Sites</a>
+            <a href="#about">About</a>
+            <div class="sign-in">
+                <button class="signButton" onclick="openModal()">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a class="sign-in-link">Sign-in</a>
+                </button>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="#">Institution</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <div class="mobile-menu">
+            <a href="#programs">Programs</a>
+            <a href="#news">News</a>
+            <a href="#announcements">Announcements</a>
+            <a href="#calendar">Calendar</a>
+            <a href="#sites">Sites</a>
+            <a href="#about">About</a>
+        </div>
+
+         <!-- Search Bar -->
+         <form class="search-form" action="/search" method="GET">
+            <input type="text" name="q" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+
+    <section class="main-banner">
+          <div class="main-content">
+            <div class="featured-image"> 
+                <img src="assets/images/newslogo.png" alt="the Envergan Logo" width="100px"></div>
+          <div class="content"><h1>THE ENVERGAN</h1>
+            <p class="description">Showcasing the rich and vibrant culture...</p></div>
+            
+        </div>
+        <div class="bottom-overlay"></div>
+    </section>
+
+    <section class="news-section">
+        <div>
+            <h2>Read latest news</h2>
+            <div class="latestnews-cards">
+                <div class="latestnews-card">
+                    <div class="bottom-overlay"></div>
+                    <img src="assets/images/news-img1.jpg" alt="News 1">
+                    <div class="content">
+                        <h3>News Title 1</h3>
+                        <p>Brief description of the news...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="latestnews-card">
+                    <div class="bottom-overlay"></div>
+                    <img src="assets/images/news-img1.jpg" alt="News 2">
+                    <div class="content">
+                        <h3>News Title 2</h3>
+                        <p>Brief description of the news...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="latestnews-card">
+                    <div class="bottom-overlay"></div>
+                    <img src="assets/images/news-img1.jpg" alt="News 3">
+                    <div class="content">
+                        <h3>News Title 3</h3>
+                        <p>Brief description of the news...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="latestnews-card">
+                    <div class="bottom-overlay"></div>
+                    <img src="assets/images/news-img1.jpg" alt="News 3">
+                    <div class="content">
+                        <h3>News Title 3</h3>
+                        <p>Brief description of the news...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-logo">
+            
+            <div class="phrase">In Pursuit of Sharper <br> Perspective - The Envergan</div>
+            <img src="assets/images/newslogo.png" alt="the Envergan Logo">
+        </div>
+        
+    </section>
+
+        <section class="live-updates-section">
+            <div class="live-updates-container">
+                <div class="live-updates-header"> 
+                    <h2>LIVE UPDATES</h2>
+                </div>
+                <div class="live-updates-columns">
+                    <div class="live-updates-column">
+                        <h3>Latest Announcement</h3>
+                        <div class="update">
+                            <span>2 hours ago</span>
+                            <p>Adapting education for the modern student</p>
+                        </div>
+                        <div class="update">
+                            <span>2 hours ago</span>
+                            <p>Pampanga extends hot streak; Manila, Davao trip MPBL foes</p>
+                        </div>
+                        <div class="update">
+                            <span>2 hours ago</span>
+                            <p>Hail to King Carlos</p>
+                        </div>
+                    </div>
+                    <div class="live-updates-column">
+                        <h3>The Envergan</h3>
+                        <div class="update">
+                            <span>2 hours ago</span>
+                            <p>Jealous cop shoots female drinking buddy dead</p>
+                        </div>
+                        <div class="update">
+                            <span>3 hours ago</span>
+                            <p>111 wanted persons nabbed in Western Visayas</p>
+                        </div>
+                        <div class="update">
+                            <span>4 hours ago</span>
+                            <p>AboitizPower backs medical mission in Pampanga</p>
+                        </div>
+                    </div>
+                    <div class="live-updates-column">
+                        <h3>The Blaze</h3>
+                        <div class="update">
+                            <span>5 hours ago</span>
+                            <p>Ex-partner of Argentina's former president Alberto Fernández accuses...</p>
+                        </div>
+                        <div class="update">
+                            <span>7 hours ago</span>
+                            <p>Extreme heat is impacting most Americans' electricity bills, AP-NORC...</p>
+                        </div>
+                        <div class="update">
+                            <span>7 hours ago</span>
+                            <p>French museum network hit by ransomware attack, but no disruption...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    </section>
+ <section class="news-and-features"  >   <!--News section-->
+
+    <div class="news-container">
+        <div class="news-header">LATEST UPDATES</div>
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="image-container">
+                    
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                    <div class="overlay3"></div>
+                    <div class="overlay">
+                       
+                        <div class="news-date">Jul 25</div>
+                        <div class="news-title">EU's Tarray won Nat'l PRISAA Games '24 'Best Taekwondo Coach'</div>
+                       
+                    </div>
+                </div>
+                <div class="news-content">
+                    <div class="news-description">
+                        Shiela M. Tarray of Manuel S. Enverga University Foundation (MSEUF) won Best Coach in Taekwondo (Women) at the National PRISAA Games 2024, July 24, at SM City Legazpi Event...
+                    </div>
+                </div>
+                <a href="#" class="read-more-button">READ MORE</a>
+            </div>
+            
+            <div class="news-card">
+                <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                    <div class="overlay3"></div>
+                    <div class="overlay">
+                        <div class="news-date">Jul 24</div>
+                        <div class="news-title">EU Wildcats triumph at Nat'l PRISAA Table Tennis Games '24</div>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <div class="news-description">
+                        MSEUF delivered a standout performance at the National PRISAA Games 2024, with their Table Tennis teams achieving remarkable results, held at Legazpi City Convention...
+                    </div>
+                </div>
+                <a href="#" class="read-more-button">READ MORE</a>
+            </div>
+            <div class="news-card">
+                <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                    <div class="overlay3"></div>
+                    <div class="overlay">
+                        <div class="news-date">Jul 24</div>
+                        <div class="news-title">LGU Kicks off a Forum for the 50th Nutrition Month</div>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <div class="news-description">
+                        The Local Government Unit (LGU) celebrated the 50th Nutrition Month with a forum on the theme "Sa PPAN: Sama-sama sa Nutrisyong Sapat Para sa Lahat'', an event that educates about nutrition, health and wellness on July 26, 2024.
+                    </div>
+                </div>
+                <a href="#" class="read-more-button">READ MORE</a>
+            </div>
+            <div class="news-card">
+                <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                    <div class="overlay3"></div>
+                    <div class="overlay">
+                        <div class="news-date">Jul 24</div>
+                        <div class="news-title">EUC athletes bag 11 medals in PRISAA Nationals</div>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <div class="news-description">
+                        Student athletes from Enverga University Candelaria represented Region 4A CALABARZON in taekwondo, table tennis (girls), and swimming (boys) and earned eleven medals in total during the PRISAA National Games held in Legazpi City, Albay from June 22-26, 2024.
+                    </div>
+                </div>
+                <a href="#" class="read-more-button">READ MORE</a>
+            </div>
+            
+        </div>
+    
+        <div class="space"></div>
+    
+       
+        
+        
+    </div>
+    <div class="news-container">
+    <div class="news-header">NEWS AND FEATURE</div>
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="image-container">
+                
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                   
+                    <div class="news-date">Jul 25</div>
+                    <div class="news-title">EU's Tarray won Nat'l PRISAA Games '24 'Best Taekwondo Coach'</div>
+                   
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Shiela M. Tarray of Manuel S. Enverga University Foundation (MSEUF) won Best Coach in Taekwondo (Women) at the National PRISAA Games 2024, July 24, at SM City Legazpi Event...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EU Wildcats triumph at Nat'l PRISAA Table Tennis Games '24</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    MSEUF delivered a standout performance at the National PRISAA Games 2024, with their Table Tennis teams achieving remarkable results, held at Legazpi City Convention...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">LGU Kicks off a Forum for the 50th Nutrition Month</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    The Local Government Unit (LGU) celebrated the 50th Nutrition Month with a forum on the theme "Sa PPAN: Sama-sama sa Nutrisyong Sapat Para sa Lahat'', an event that educates about nutrition, health and wellness on July 26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EUC athletes bag 11 medals in PRISAA Nationals</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Student athletes from Enverga University Candelaria represented Region 4A CALABARZON in taekwondo, table tennis (girls), and swimming (boys) and earned eleven medals in total during the PRISAA National Games held in Legazpi City, Albay from June 22-26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+    </div>
+
+    <div class="space"></div>
+
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="image-container">
+                
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                   
+                    <div class="news-date">Jul 25</div>
+                    <div class="news-title">EU's Tarray won Nat'l PRISAA Games '24 'Best Taekwondo Coach'</div>
+                   
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Shiela M. Tarray of Manuel S. Enverga University Foundation (MSEUF) won Best Coach in Taekwondo (Women) at the National PRISAA Games 2024, July 24, at SM City Legazpi Event...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EU Wildcats triumph at Nat'l PRISAA Table Tennis Games '24</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    MSEUF delivered a standout performance at the National PRISAA Games 2024, with their Table Tennis teams achieving remarkable results, held at Legazpi City Convention...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">LGU Kicks off a Forum for the 50th Nutrition Month</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    The Local Government Unit (LGU) celebrated the 50th Nutrition Month with a forum on the theme "Sa PPAN: Sama-sama sa Nutrisyong Sapat Para sa Lahat'', an event that educates about nutrition, health and wellness on July 26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EUC athletes bag 11 medals in PRISAA Nationals</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Student athletes from Enverga University Candelaria represented Region 4A CALABARZON in taekwondo, table tennis (girls), and swimming (boys) and earned eleven medals in total during the PRISAA National Games held in Legazpi City, Albay from June 22-26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+    </div>
+    
+    <div class="space"></div>
+
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="image-container">
+                
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                   
+                    <div class="news-date">Jul 25</div>
+                    <div class="news-title">EU's Tarray won Nat'l PRISAA Games '24 'Best Taekwondo Coach'</div>
+                   
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Shiela M. Tarray of Manuel S. Enverga University Foundation (MSEUF) won Best Coach in Taekwondo (Women) at the National PRISAA Games 2024, July 24, at SM City Legazpi Event...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EU Wildcats triumph at Nat'l PRISAA Table Tennis Games '24</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    MSEUF delivered a standout performance at the National PRISAA Games 2024, with their Table Tennis teams achieving remarkable results, held at Legazpi City Convention...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">LGU Kicks off a Forum for the 50th Nutrition Month</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    The Local Government Unit (LGU) celebrated the 50th Nutrition Month with a forum on the theme "Sa PPAN: Sama-sama sa Nutrisyong Sapat Para sa Lahat'', an event that educates about nutrition, health and wellness on July 26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EUC athletes bag 11 medals in PRISAA Nationals</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Student athletes from Enverga University Candelaria represented Region 4A CALABARZON in taekwondo, table tennis (girls), and swimming (boys) and earned eleven medals in total during the PRISAA National Games held in Legazpi City, Albay from June 22-26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+    </div>
+    
+</div>
+
+<div class="news-container">
+    <div class="news-header">MOST POPULAR</div>
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="image-container">
+                
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                   
+                    <div class="news-date">Jul 25</div>
+                    <div class="news-title">EU's Tarray won Nat'l PRISAA Games '24 'Best Taekwondo Coach'</div>
+                   
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Shiela M. Tarray of Manuel S. Enverga University Foundation (MSEUF) won Best Coach in Taekwondo (Women) at the National PRISAA Games 2024, July 24, at SM City Legazpi Event...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EU Wildcats triumph at Nat'l PRISAA Table Tennis Games '24</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    MSEUF delivered a standout performance at the National PRISAA Games 2024, with their Table Tennis teams achieving remarkable results, held at Legazpi City Convention...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">LGU Kicks off a Forum for the 50th Nutrition Month</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    The Local Government Unit (LGU) celebrated the 50th Nutrition Month with a forum on the theme "Sa PPAN: Sama-sama sa Nutrisyong Sapat Para sa Lahat'', an event that educates about nutrition, health and wellness on July 26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EUC athletes bag 11 medals in PRISAA Nationals</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Student athletes from Enverga University Candelaria represented Region 4A CALABARZON in taekwondo, table tennis (girls), and swimming (boys) and earned eleven medals in total during the PRISAA National Games held in Legazpi City, Albay from June 22-26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+    </div>
+
+    <div class="space"></div>
+
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="image-container">
+                
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                   
+                    <div class="news-date">Jul 25</div>
+                    <div class="news-title">EU's Tarray won Nat'l PRISAA Games '24 'Best Taekwondo Coach'</div>
+                   
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Shiela M. Tarray of Manuel S. Enverga University Foundation (MSEUF) won Best Coach in Taekwondo (Women) at the National PRISAA Games 2024, July 24, at SM City Legazpi Event...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EU Wildcats triumph at Nat'l PRISAA Table Tennis Games '24</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    MSEUF delivered a standout performance at the National PRISAA Games 2024, with their Table Tennis teams achieving remarkable results, held at Legazpi City Convention...
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">LGU Kicks off a Forum for the 50th Nutrition Month</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    The Local Government Unit (LGU) celebrated the 50th Nutrition Month with a forum on the theme "Sa PPAN: Sama-sama sa Nutrisyong Sapat Para sa Lahat'', an event that educates about nutrition, health and wellness on July 26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        <div class="news-card">
+            <div class="image-container">
+                    <img src="assets/images/news-img1.jpg" alt="News Image 1">
+                <div class="overlay3"></div>
+                <div class="overlay">
+                    <div class="news-date">Jul 24</div>
+                    <div class="news-title">EUC athletes bag 11 medals in PRISAA Nationals</div>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-description">
+                    Student athletes from Enverga University Candelaria represented Region 4A CALABARZON in taekwondo, table tennis (girls), and swimming (boys) and earned eleven medals in total during the PRISAA National Games held in Legazpi City, Albay from June 22-26, 2024.
+                </div>
+            </div>
+            <a href="#" class="read-more-button">READ MORE</a>
+        </div>
+        
+    </div>
+    
+    
+    
+</div>
+
+<!--End of news section-->
+</section>
+
+
+<section class="news-section">
+    <div>
+   
+        
+    </div>
+    <div class="news-logo">
+        
+        <div class="phrase">In Pursuit of Sharper <br> Perspective - The Envergan</div>
+        <img src="assets/images/newslogo.png" alt="the Envergan Logo">
+    </div>
+    
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: info@msenverga.edu</li>
+                <li>Phone: +63 123 456 7890</li>
+                <li>Address: 123 University Ave, Candelaria, Philippines</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Manuel S. Enverga University Foundation-Candelaria Inc. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>
